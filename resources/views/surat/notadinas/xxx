@@ -1,0 +1,12 @@
+ <embed class="hover:hidden; bg-rose-300" id="preview_pdf" src="data:application/pdf;base64, <?= base64_encode($item['surat_pdf']) ?>" type='application/pdf' width="100%" height="100%" title="Title PDF" />
+                                    <div class="items-center gap-x-3">
+                                        <input hidden type="file" name="surat_pdf" id="pdf_input" accept="pdf/*">
+                                        
+                                        <!-- <button type="button" onclick="show_hide('pdfArea')" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Change</button> -->
+                                        <!-- <input hidden required type="file" name="surat_pdf" id="pdf_input" accept="pdf/*"> -->
+                                        <button type="button" onclick="getPdf('pdf_input', 'preview_pdf')" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Change</button>
+
+                                    </div>
+                                    <!-- <input type="file" value="<?= $item['surat_pdf'] ?>"> -->
+                                    <!-- <textarea name="tembusan" class="text-sm h-full pt-0 px-2 leading-6; bg-transparent text-gray-900" cols="30" rows="3"><?= 'Tembusan: ' . $_tembusan ?></textarea> -->
+                               

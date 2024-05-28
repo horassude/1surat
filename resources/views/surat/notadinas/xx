@@ -1,0 +1,15 @@
+
+<script>
+    // Function to handle double click event
+    function handleDoubleClick() {
+        // Display the element
+        document.getElementById("edit-tujuan").style.display = "block";
+        document.getElementById("myBtn").style.display = "none";
+    }
+
+    // Get the button element by its ID
+    var button = document.getElementById("myBtn");
+
+    // Attach an event listener for the double click event
+    button.addEventListener("dblclick", handleDoubleClick);
+</script>
